@@ -1,0 +1,35 @@
+@import './variables';
+@import './reset';
+@import './header';
+@import './menu';
+@import './product';
+@import './banner';
+@import './footer';
+@import './media';
+
+.container {
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: $darkgrey;
+    margin-bottom: 30px;
+  }
+  &__item {
+    font-size: 12px;
+    font-weight: 500;
+    a {
+      color: $darkgrey;
+    }
+  }
+}
+
+.breadcrumbs--mobile {
+  display: none;
+}

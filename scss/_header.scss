@@ -1,0 +1,126 @@
+.header {
+  padding: 23px 0 30px;
+  border-bottom: 1px solid $grey;
+  margin-bottom: 37px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+  }
+  &__logo {
+  }
+  &__address {
+    color: $darkgrey;
+  }
+  &__address-text {
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 69px;
+  }
+  &__login {
+    color: $darkgrey;
+    text-decoration: underline;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s ease;
+
+    path {
+      transition: 0.3s ease;
+    }
+    &:hover {
+      path {
+        stroke: $blue;
+        // fill: $darkgrey;
+      }
+      color: $blue;
+    }
+  }
+  &__socials-link {
+    color: $darkgrey;
+    text-decoration: underline;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    transition: 0.3s ease;
+    path {
+      transition: 0.3s ease;
+    }
+    &:hover {
+      &:last-child {
+        path {
+          stroke: $blue;
+          fill: transparent;
+        }
+      }
+    }
+    &:hover {
+      path {
+        fill: $blue;
+      }
+    }
+  }
+  &__socials-box {
+    display: flex;
+    gap: 37px;
+    align-items: center;
+  }
+  &__menu-btn {
+    display: none;
+  }
+  &__menu {
+    display: none;
+  }
+  &__phone {
+    color: $black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  &__phone-img {
+  }
+  &__cart-svg {
+    display: none;
+  }
+  &__cart-btn {
+    position: relative;
+    cursor: pointer;
+    span {
+      position: absolute;
+      top: -5px;
+      right: -8px;
+      color: $white;
+      font-size: 12px;
+      font-weight: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 19px;
+      height: 19px;
+      border-radius: 100%;
+      background: $blue;
+      opacity: 0;
+      transition: 0.3s ease;
+    }
+    path {
+      transition: 0.3s ease;
+    }
+    &:hover {
+      span {
+        opacity: 1;
+      }
+      path {
+        fill: $blue;
+      }
+    }
+  }
+}
+
+.logo {
+}
