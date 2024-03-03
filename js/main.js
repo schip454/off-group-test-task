@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterBtn = document.querySelector('.product__btn-filter')
   const filterContent = document.querySelector('.product__aside')
 
-  console.log(filterBtn, 'filterBtn')
   if (tabs && tabContent)
     handleTabs(tabs, tabContent)
 
@@ -38,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (filterBtn &&
     filterContent)
     handleToggleFilter(filterBtn, filterContent)
-
-
 
 
 

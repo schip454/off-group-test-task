@@ -4,28 +4,15 @@ import { Thumbs } from 'swiper/modules';
 
 
 export const imagesSlider = () => {
-  // var swiper = new Swiper(".product__thumbs", {
-  //   spaceBetween: 10,
-  //   slidesPerView: 4,
-  //   freeMode: true,
-  //   watchSlidesProgress: true,
-  // });
-  // var swiper2 = new Swiper(".product__slider", {
-  //   spaceBetween: 10,
-  //   thumbs: {
-  //     swiper: swiper,
-  //   },
-  // });
-  var swiper = new Swiper('.product__thumbs', {
-    loop: true,
+
+  const swiper = new Swiper('.product__thumbs', {
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
 
     watchSlidesProgress: true,
   });
-  var swiper2 = new Swiper('.product__slider', {
-    loop: true,
+  const swiper2 = new Swiper('.product__slider', {
     spaceBetween: 10,
     modules: [Thumbs],
     navigation: {
